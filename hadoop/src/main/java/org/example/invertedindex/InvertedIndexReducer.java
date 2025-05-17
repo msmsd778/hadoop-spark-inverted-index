@@ -15,9 +15,9 @@ public class InvertedIndexReducer extends Reducer<Text, MapWritable, Text, Text>
     protected void reduce(Text key, Iterable<MapWritable> values, Context ctx)
             throws IOException, InterruptedException {
 
-       Map<String, Integer> aggregate = new HashMap<>();
+    Map<String, Integer> aggregate = new HashMap<>();
 
-       System.out.println("### Reducer received key: " + key.toString());
+    System.out.println("### Reducer received key: " + key.toString());
 
     for (MapWritable m : values) {
         for (Map.Entry<Writable, Writable> entry : m.entrySet()) {

@@ -12,7 +12,6 @@
   <url>http://maven.apache.org</url>
 
   <dependencies>
-    <!-- Provided: use the cluster's Hadoop libs, don't bundle them -->
     <dependency>
       <groupId>org.apache.hadoop</groupId>
       <artifactId>hadoop-common</artifactId>
@@ -26,7 +25,6 @@
       <scope>provided</scope>
     </dependency>
 
-    <!-- your test framework -->
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
@@ -38,7 +36,6 @@
 
   <build>
     <plugins>
-      <!-- compile to Java 8 -->
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
@@ -49,7 +46,6 @@
         </configuration>
       </plugin>
 
-      <!-- shade only your classes, set Main-Class -->
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-shade-plugin</artifactId>
@@ -65,7 +61,6 @@
                 <filter>
                   <artifact>*:*</artifact>
                   <excludes>
-                    <!-- don’t bundle any Hadoop classes -->
                     <exclude>org/apache/hadoop/**</exclude>
                     <exclude>META-INF/*.SF</exclude>
                     <exclude>META-INF/*.DSA</exclude>

@@ -13,7 +13,6 @@
 <div class="container">
     <h1 class="mb-4">Inverted Index Search</h1>
 
-    <!-- ───────────────────────────  BUILD INDEX  ─────────────────────────── -->
     <div class="section">
         <h4>Build New Index</h4>
         <form action="/build" method="post">
@@ -27,7 +26,6 @@
                 <div class="form-text">Hold Ctrl (or Cmd) to select multiple files.</div>
             </div>
 
-            <!-- NEW: Reducers input -->
             <div class="mb-3 col-sm-2">
                 <label for="reducers" class="form-label">Number of Reducers:</label>
                 <input type="number" name="reducers" id="reducers" class="form-control" value="2" min="1" required>
@@ -37,7 +35,6 @@
         </form>
     </div>
 
-    <!-- ───────────────────────────  SELECT INDEX  ─────────────────────────── -->
     <div class="section">
         <h4>Select Index</h4>
         <form action="/select_index" method="post">
@@ -49,7 +46,6 @@
         </form>
     </div>
 
-    <!-- ───────────────────────────  SEARCH  ─────────────────────────── -->
     <div class="section">
         <h4>Search</h4>
         <form action="/search" method="post" class="row g-2">
@@ -62,7 +58,6 @@
         </form>
     </div>
 
-    <!-- ───────────────────────────  RESULTS  ─────────────────────────── -->
     {% if query %}
         <div class="section">
             <h5>Query: "{{ query }}"</h5>
@@ -94,7 +89,6 @@
         </div>
     {% endif %}
 
-    <!-- ───────────────────────────  VIEW CURRENT INDEX FILE  ─────────────────────────── -->
     <div class="section">
         <h4>View Current Index File</h4>
         {% if selected_index %}
