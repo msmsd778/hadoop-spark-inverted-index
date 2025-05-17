@@ -1,0 +1,4 @@
+/home/hadoop/invertedindex/src/main/java/org/example/invertedindex/InvertedIndexMapper.java
+/home/hadoop/invertedindex/src/main/java/org/example/invertedindex/Driver.java
+/home/hadoop/invertedindex/src/main/java/org/example/invertedindex/Combiner.java
+/home/hadoop/invertedindex/src/main/java/org/example/invertedindex/InvertedIndexReducer.java

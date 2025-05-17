@@ -1,0 +1,1 @@
+classical computing differs from quantum computing in terms of architecture and processing style.

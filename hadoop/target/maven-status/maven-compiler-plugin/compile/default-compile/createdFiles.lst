@@ -1,0 +1,4 @@
+org/example/invertedindex/Combiner.class
+org/example/invertedindex/InvertedIndexReducer.class
+org/example/invertedindex/Driver.class
+org/example/invertedindex/InvertedIndexMapper.class
