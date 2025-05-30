@@ -1,0 +1,5 @@
+org/example/inv2/InvertedIndexMapper.class
+org/example/inv2/InvertedIndexReducer.class
+org/example/inv2/Driver.class
+org/example/inv2/SimpleMapper.class
+org/example/inv2/Combiner.class

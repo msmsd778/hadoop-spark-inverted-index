@@ -1,0 +1,15 @@
+adopt	doc2.txt:1
+cloud	doc1.txt:1	doc2.txt:1
+service	doc2.txt:1
+power	doc2.txt:1
+business	doc1.txt:1
+remote	doc1.txt:1
+storage	doc1.txt:1
+computing	doc1.txt:1	doc2.txt:1
+transforming	doc1.txt:1
+enabling	doc1.txt:1
+processing	doc1.txt:1
+many	doc2.txt:1
+organization	doc2.txt:1
+scale	doc2.txt:1
+infrastructure	doc2.txt:1
