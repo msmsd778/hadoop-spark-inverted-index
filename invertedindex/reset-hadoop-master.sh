@@ -11,9 +11,6 @@ echo "[MASTER] Cleaning HDFS NameNode and DataNode directories..."
 rm -rf /opt/hdfs/namenode/*
 rm -rf /opt/hdfs/datanode/*
 
-echo "[MASTER] Formatting HDFS NameNode..."
-hdfs namenode -format -force
-
 echo "[MASTER] Starting NameNode..."
 hdfs --daemon start namenode
 
